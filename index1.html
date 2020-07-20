@@ -1,0 +1,33 @@
+<html>
+<head>
+   <title>Question 1</title>
+</head>
+<body>
+    <h2>
+        Take anumber from the user and write a function checks whether the number is even or odd.<br>
+        assign he result to a variable and log that variables in the console.
+    </h2>
+    <script>
+
+    let num =prompt("enter number here");
+    num =Number(num);
+    var result;
+    let check =function (num)
+    {
+        if (num%2===0)
+        {
+        var result="even";
+        console.log("the number is "+ num+ " and it is "+result);
+        }
+        else
+        {
+        var result="odd";
+        console.log("the number is "+ num+ " and it is "+result);
+        }
+    };
+    check (num);
+    
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<html>
+<head>
+   <title>Question 3</title>
+</head>
+<body>
+    <h2>
+        write a program to take marks as input from the user and grade him accordingly.<br>
+         use conditional staements. <br>
+        also the same code using switch switch or ternay.
+    </h2>
+    <script>
+
+    let num =prompt("enter number here");
+    num =Number(num);
+    var grade;
+    if(num>100||num<0)
+    {
+        document.write("plese give correct amount of number");
+    }
+    else{
+        if (num>=0 && num<20)
+        {
+       grade="E";
+        }
+       else if (num>=20 && num<40)
+        {
+        grade="D";
+        }
+       else if (num>=40 && num<60)
+        {
+        grade="C";
+        }
+        else if (num>=60 && num<80)
+        {
+        grade="B";
+        }
+        else if (num>=80 && num<100)
+        {
+        grade="A";
+        }
+    }
+    console.log("Marks are "+num + "and grade is "+grade);
+
+    switch(grade)
+    {
+        case grade="E" :console.log("very poor") ;
+            break;
+        case grade ="D": console.log("u need improvment");
+            break;
+        case grade="C" :console.log("good") ;
+            break;
+        case grade="B":console.log("very good") ;
+            break;
+        case grade="A":console.log("excellent") ;
+            break;
+        default :
+            console.log('plese enter the correct number');
+    };
+    
+    </script>
+</body>
+</html>
